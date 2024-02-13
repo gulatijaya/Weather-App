@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!----------------- Custom CSS -------------->
+    <link rel="stylesheet" href="./CSS/weatherapp.css">
+</head>
+<body>
+    <!-------------- Weather App container start ------------->
+    <div class="container">
+        <h2 class="weather_head">Weather App</h2>
+        <div class="weather__header">
+            <div class="form">
+                <div class="search_form">
+                    <input type="text" class="search_input input-box" placeholder="Search city...">
+                    <button type="submit" class="search_submit" id="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+            </div>   
+        </div>
+        <h3 class="error_msg"></h3>
+        <!--------------- Weather body start ------------>
+        <div class="weather__body">
+            <h2 class="weather__city"></h2>
+            <div class="weather__forecast"></div>
+            <div class="weather__icon">
+            </div>
+            <p class="weather__temperature"></p>
+            <div class="weather__minmax">
+                <p class="temp_min"></p>
+                <p class="temp_max"></p>
+            </div>
+        </div>
+        <!-------------- Weather body end ---------------->
+
+        <!------------- Weather info start --------------->
+        <div class="weather__info">
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="weather__realfeel"></p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather__humidity"></p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="weather__wind"></p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather__pressure"></p>
+                </div>
+            </div>
+        </div>
+        <!--------------- Weather info end -------------------->
+    </div>
+    <!------------------ Weather App container end ------------>
+
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script src="./JS/weatherapp.js"></script>
+    
+</body>
+</html>
